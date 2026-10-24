@@ -1,0 +1,27 @@
+{
+  "name": "dark-mansion-game",
+  "version": "0.1.0",
+  "private": true,
+  "description": "暗堕之馆 · 实时探索玩法（Vite 独立开发仓库）",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "build:fast": "vite build",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit",
+    "test": "node tests/run.cjs",
+    "port:core": "node scripts/port-core.cjs"
+  },
+  "dependencies": {
+    "vue": "^3.5.13",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.10",
+    "esbuild": "^0.28.2",
+    "typescript": "^5.7.2",
+    "vite": "^8.3.5",
+    "vue-tsc": "^2.2.0"
+  }
+}
